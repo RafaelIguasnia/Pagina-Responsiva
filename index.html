@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Tecnológicos</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    @media screen and (max-width: 768px) {
+      .product {
+        width: calc(50% - 20px);
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .product {
+        width: calc(100% - 20px);
+      }
+    }
+    
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      li {
+        float: none;
+      }
+      li a {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="https://shopea.com/">Inicio</a></li>
+    <li><a href="https://shopea.com/content/4-sobre-nosotros">Acerca de</a></li>
+    <li><a href="https://shopea.com/23-gamers">Productos</a></li>
+    <li><a href="https://shopea.com/contactenos">Contacto</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Productos Tecnológicos</h1>
+  <div class="product-list">
+    <div class="product">
+      <img src="https://i.blogs.es/ab60b0/sonyreader/1024_2000.jpg" alt="Producto 1">
+      <h2>Sony Reader</h2>
+      <p>La batería tiene una duración de 7500 páginas (se supone que no gasta nada hasta que cambiamos de página) y la visibilidad es muy buena incluso con luz solar y como no dispone de luz trasera la fatiga de los ojos será mucho menor..</p>
+      <p>Precio: $100</p>
+    </div>
+    <div class="product">
+      <img src="https://i.blogs.es/c3d9b0/intel_core-20duo-202/1024_2000.jpg" alt="Producto 2">
+      <h2>Intel Core 2 Duo</h2>
+      <p>Nueva serie de procesadores, Intel introduce una novedad significativa: un número en cada chip que informa sobre el consumo que tiene. Por ejemplo un procesador Core 2 Duo E6800 indicará un consumo de entre 55 y 75 watios, algo considerado normal por Intel para procesadores de sobremesa mientras que un Core 2 Duo T5400 representaría un consumo de entre 25 y 55 watios, estándar de los portátiles.</p>
+      <p>Precio: $800</p>
+    </div>
+    <div class="product">
+      <img src="https://i.blogs.es/0a7166/dellxps/1024_2000.jpg" alt="Producto 3">
+      <h2>Dell XPS M2010</h2>
+      <p>Con una pantalla LCD de 20.1 pulgadas, procesador Intel Core Duo, hasta 4 GB de RAM y una tarjeta gráfica Radeon X1800, los accesorios como teclado y ratón son inalámbricos. La pantalla se dobla para transportarla y lleva una asa para que podamos hacerlo fácilmente..</p>
+      <p>Precio: $4000</p>
+    </div>
+ 
+  </div>
+</div>
+
+</body>
+</html>
